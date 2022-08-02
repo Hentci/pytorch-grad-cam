@@ -88,7 +88,7 @@ if __name__ == '__main__':
 
     if args.use_cuda:
         model = model.cuda()
-
+    
     target_layers = [model.blocks[-1].norm1]
 
     if args.method not in methods:
